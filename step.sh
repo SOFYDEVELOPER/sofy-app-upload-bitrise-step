@@ -4,7 +4,7 @@ set -ex
 #echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 echo "build path "${build_path}""
 curl --location --request POST 'https://api.sofy.ai/api/AppTests/buildUpload' \
---header "SubscriptionKey: ${subcription_key}" \
+--header "SubscriptionKey: ${subscription_key}" \
 --form "applicationFile=@"${build_path}""
 #
 # --- Export Environment Variables for other Steps:
