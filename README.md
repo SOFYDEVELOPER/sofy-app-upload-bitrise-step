@@ -1,4 +1,4 @@
-# Sofy Upload
+# Sofy App Upload Bitrise Step
 
 Upload your build at sofy through bitrise.
 
