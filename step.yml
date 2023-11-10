@@ -1,5 +1,3 @@
-
-
 title: |-
   Sofy-app-upload-bitrise-step
 summary: |
@@ -27,6 +25,7 @@ project_type_tags:
 # Type tags are used for categorizing steps, for easier step discovery in Step Libraries.
 # You can find more information about type tags in the Step Development Guideline:
 # https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
+
 type_tags:
   - deploy
 
