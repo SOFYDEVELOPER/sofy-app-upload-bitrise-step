@@ -1,16 +1,16 @@
 
 
 title: |-
-  Sofy upload
+  Sofy-app-upload-bitrise-step
 summary: |
   Uploads your build to Sofy.
 description: |
   Uploads your build to Sofy.
   You are required to provide the Build Path and Subscription key.
   
-website: https://github.com/SOFYAIOFFICIAL/bitrise-step-sofy-upload
-source_code_url: https://github.com/SOFYAIOFFICIAL/bitrise-step-sofy-upload
-support_url: https://github.com/SOFYAIOFFICIAL/bitrise-step-sofy-upload/issues
+website: https://github.com/SOFYDEVELOPER/sofy-app-upload-bitrise-step
+source_code_url: https://github.com/SOFYDEVELOPER/sofy-app-upload-bitrise-step
+support_url: https://github.com/SOFYDEVELOPER/sofy-app-upload-bitrise-step/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -68,3 +68,16 @@ inputs:
       is_required: true
       is_sensitive: true
 
+  - application_guid:
+    opts:
+      title: Application Guid
+      description: |
+        Unique identifier for the application (Optional).
+      is_required: false
+
+  - certificate_name:
+    opts:
+      title: Certificate Name
+      description: |
+        Your Application certificate name (optional)
+      is_required: false

@@ -3,9 +3,11 @@ set -ex
 
 #echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 echo "build path "${build_path}""
-curl --location --request POST 'https://api.sofy.ai/api/AppTests/buildUpload' \
+curl --location --request POST 'https://public.sofy.ai/parser-microservice/build-upload' \
 --header "SubscriptionKey: ${subscription_key}" \
---form "applicationFile=@"${build_path}""
+--form "applicationFile=@"${build_path}"" \
+--form "ApplicationGUID= ${application_guid}" \
+--form "CertificateName= ${certificate_name}" \
 #
 # --- Export Environment Variables for other Steps:
 # You can export Environment Variables for other Steps with
