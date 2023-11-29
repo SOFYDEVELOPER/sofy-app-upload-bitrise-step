@@ -7,7 +7,7 @@ app:
   - sofy_subscription_key: $subscription_key
   # If you want to share this step into a StepLib
   - BITRISE_STEP_ID: sofy-upload-bitrise-step
-  - BITRISE_STEP_VERSION: "0.0.2"
+  - BITRISE_STEP_VERSION: "0.0.4"
   - BITRISE_STEP_GIT_CLONE_URL: https://github.com/SOFYDEVELOPER/sofy-app-upload-bitrise-step.git
   - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/SOFYDEVELOPER/bitrise-steplib.git
 
@@ -40,8 +40,9 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - build_path: "/Users/sofy/Downloads/final/bitrise-step-testing-uploading/_tmp/fb.apk"
-        - subscription_key: acc80bd1-5cb7-4c89-a01e-2e7169009e52
+        - build_path: "/Users/sofy/Documents/GitHub/sofy-app-upload-bitrise-step/_tmp/fb.apk"
+        - subscription_key: C44C6F2C-1730-4943-B2D4-FFA01E96C09B
+        - application_guid: 38D15F08-E604-4911-9D79-678B0B5FBDC6
 
 
   # ----------------------------------------------------------------
